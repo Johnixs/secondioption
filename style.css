@@ -1,0 +1,334 @@
+html {
+    scroll-behavior: smooth;
+}
+ 
+body {
+    margin: 0;
+    background-color: rgb(243, 5, 5);
+}
+ 
+.main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(a.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+}
+ 
+.logo {
+    color: blue;
+    font-size: 40px;
+    float: left;
+    font-family: cursive;
+    padding-top: 0;
+    cursor: pointer;
+    transition: .3s;
+}
+ 
+.logo:hover {
+    text-shadow: 0 0 15px blue,
+        0 0 40px rgb(3, 3, 39),
+        0 0 32px rgb(6, 6, 53),
+        0 0 34px rgb(5, 5, 51);
+    font-size: 41.5px;
+}
+ 
+.navbar {
+    width: 95%;
+    height: auto;
+    margin-left: 30px;
+}
+ 
+.menu {
+    width: 600px;
+    float: left;
+    height: 70px;
+}
+ 
+.menu ul {
+    float: left;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+}
+ 
+.menu ul li {
+    list-style: none;
+    margin-left: 60px;
+    font-size: 16px;
+}
+ 
+.menu ul li a {
+    text-decoration: none;
+    color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: .5s ease;
+}
+ 
+.menu ul li a:hover {
+    color: rgb(214, 106, 106);
+    font-size: 20px;
+}
+ 
+.taas {
+    float: right;
+    width: 240px;
+    background: white;
+    height: 30px;
+    padding: 8px;
+    border-radius: 15px;
+    margin-top: 10px;
+    transition: .3s;
+}
+ 
+.taas:hover {
+    background: black;
+}
+ 
+.search-txt {
+    width: 190px;
+    padding: 0 6px;
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    color: black;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: .6px;
+    transition: .1s;
+}
+ 
+.taas:hover .search-txt {
+    color: white;
+}
+ 
+.title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ 
+.title h1 {
+    cursor: pointer;
+    font-family: cursive;
+    color: white;
+    font-size: 65px;
+    text-shadow: 0 6px black;
+    transition: .5s;
+}
+ 
+.title h1:hover {
+    text-shadow: 0 0 15px blue,
+        0 0 40px rgb(3, 3, 39),
+        0 0 32px rgb(6, 6, 53),
+        0 0 34px rgb(5, 5, 51);
+    font-size: 70px;
+    border-radius: 6px;
+}
+ 
+.button {
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 30px;
+}
+ 
+.btn {
+    color: white;
+    padding: 5px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid white;
+    transition: .5s ease;
+}
+ 
+.btn:hover {
+    background-color: aqua;
+    color: white;
+}
+ 
+.about,
+.monkey {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    isolation: isolate;
+    color: white;
+}
+ 
+.monkey {
+    padding: 80px 24px;
+}
+ 
+.bg-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+ 
+.homan {
+    font-size: 30px;
+    color: blue;
+    transition: .1s;
+    text-align: center;
+}
+ 
+.homan:hover {
+    text-decoration: underline;
+    color: aqua;
+    cursor: pointer;
+}
+ 
+.P1 {
+    color: rgb(11, 14, 182);
+    text-align: center;
+    font-family: cursive;
+    padding: 5px;
+    padding-left: 5px;
+    border-radius: 60px;
+    background-color: white;
+    transition: .3s;
+    margin: auto auto auto 20px;
+}
+ 
+.P1:hover {
+    font-size: 15px;
+    background-color: black;
+    box-shadow: 0px 0px 5px red;
+}
+ 
+.bold {
+    color: black;
+    font-family: Arial;
+    transition: .3s;
+}
+ 
+.bold:hover {
+    color: blue;
+}
+ 
+.Interest {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0 15px 5px;
+    background: transparent;
+    max-width: 600px;
+    margin: 100px 0 0 100px;
+    transition: .3s;
+}
+ 
+.Interest:hover {
+    border-color: rgb(17, 0, 255);
+    box-shadow: 0px 0px 20px indigo,
+     0px 0px 10px rgb(112, 14, 192),
+    0px 0px 19px rgb(70, 16, 198),
+    0px 0px 10px rgb(120, 19, 221);
+}
+ 
+.Interest h2,
+.Contact h2 {
+    transition: .3s;
+}
+ 
+.Interest h2:hover{
+    font-size: 50px;
+    color: darkblue;
+}
+ 
+.Interest .ezz {
+    transition: .3s;
+}
+ 
+.Interest .ezz:hover {
+    color: azure;
+    text-shadow: 3px 3px blue;
+    font-size: 15px;
+}
+ 
+.Contact {
+    border: 2px solid rgb(0, 0, 0);
+    color: white;
+    max-width: 600px;
+    margin: 110px 0 0 100px;
+    padding: 0 15px 5px;
+    transition: .4s;
+    border-radius: 5px;
+}
+ 
+.Contact:hover {
+    border-color: rgb(166, 0, 255);
+    box-shadow: 0px 0px 30px indigo,
+    0px 0px 20px rgb(30, 15, 116),
+    0px 0px 30px rgb(125, 63, 170),
+    0px 0px 20px darkblue;
+}
+ 
+.Contact h2:hover {
+    color: darkblue;
+    font-size: 50px;
+}
+ 
+.kasagkwarta {
+    text-align: center;
+    color: red;
+    transition: .3s;
+    margin-top: -29.9px;
+}
+ 
+.kasagkwarta:hover {
+    text-shadow: 0 0 15px blue,
+        0 0 40px rgb(11, 204, 238),
+        0 0 32px rgb(162, 178, 59),
+        0 0 34px rgb(5, 5, 51);
+        font-size:40px;
+}
+ 
+.mana {
+    padding: 10px;
+}
+
+.css {
+    width: 50%;
+    padding-left: 10px;
+}
+
+.css:hover
+{
+ box-shadow: 0px 0px 15px skyblue,
+ 0px 0px 30px green,
+ 0px 0px 50px indigo,
+ 0px 0px 30px darkblue;
+ border-radius: 3px ;
+ border: 2px solid transparent;
+}
+
+.ssc,.css {
+    transition: .3s;
+}
+
+.ssc {
+    width: 50%;
+    float: right;
+}
+
+.ssc:hover
+{
+ box-shadow: 0px 0px 10px rgb(1, 240, 97),
+ 0px 0px 30px green,
+ 0px 0px 50px indigo,
+ 0px 0px 30px darkblue;
+ border-radius: 3px ;
+ border: 2px solid transparent;
+}
